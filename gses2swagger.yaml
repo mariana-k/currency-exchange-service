@@ -2,8 +2,8 @@ swagger: "2.0"
 info:
   description: ""
   version: "1.0.0"
-  title: "GSES BTC application"
-host: "gses2.app"
+  title: "Currency exchange rate application"
+host: "currency-exchange-service-18e40b0c61dd.herokuapp.com"
 basePath: "/api"
 tags:
   - name: "rate"
@@ -11,7 +11,7 @@ tags:
   - name: "subscription"
     description: "Робота з підпискою"
 schemes:
-  - "http"
+  - "https"
 paths:
   /rate:
     get:

@@ -45,6 +45,7 @@ https://currency-exchange-service-18e40b0c61dd.herokuapp.com/
 
 GET /api/rates: Get the current exchange rate.
 POST /api/subscribe: Subscribe to the email newsletter.
+Swagger /api-docs: Documentation and testing
 
 ## Testing
 
