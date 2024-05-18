@@ -39,7 +39,7 @@ node src/app.js
 
 ## API URL
 
-https://currency-exchange-service-18e40b0c61dd.herokuapp.com/api-docs
+<https://currency-exchange-service-18e40b0c61dd.herokuapp.com/api-docs>
 
 ## Endpoints
 
@@ -57,7 +57,6 @@ Value: `test1@example.com` (repeat for other test emails)
 
 Method: GET
 URL: `https://currency-exchange-service-18e40b0c61dd.herokuapp.com/api/rate`
-
 
 ## Automated Testing
 
