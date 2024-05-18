@@ -33,6 +33,7 @@ app.use('/api/subscribe', subscriptionRoutes);
 
 // Schedule daily emails
 const { sendDailyEmails } = require('./services/emailService');
+sendDailyEmails(); // Temporary manual trigger for testing
 cron.schedule('0 0 * * *', sendDailyEmails);
 
 const PORT = process.env.PORT || 3000;

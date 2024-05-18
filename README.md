@@ -37,10 +37,14 @@ node src/app.js
 
 ```
 
+## API URL
+
+https://currency-exchange-service-18e40b0c61dd.herokuapp.com/
+
 ## Endpoints
 
 GET /api/rates: Get the current exchange rate.
-POST /api/subscription: Subscribe to the email newsletter.
+POST /api/subscribe: Subscribe to the email newsletter.
 
 ## Testing
 
