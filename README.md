@@ -12,7 +12,7 @@ This service provides the current exchange rate of USD to UAH and allows users t
 
 1. Clone the repository.
 2. Create a `.env` file with the following variables:
-`MONGO_URI=mongodb://mongo:27017/currency-exchange`
+`MONGO_URI="mongodb+srv://<username>:<password>@cluster0.mongodb.net/currency-exchange-service?retryWrites=true&w=majority"`
 `EMAIL_USER=your-email@gmail.com`
 `EMAIL_PASS=your-email-password`
 3. Run the application with Docker
@@ -55,3 +55,14 @@ Run tests with:
 npm test
 
 ```
+
+## Testing with Postman
+
+Method: POST
+URL: `https://currency-exchange-service-18e40b0c61dd.herokuapp.com/api/subscribe`
+Body: `x-www-form-urlencoded`
+Key: `email`
+Value: `test1@example.com` (repeat for other test emails)
+
+Method: GET
+URL: `https://currency-exchange-service-18e40b0c61dd.herokuapp.com/api/rate`
