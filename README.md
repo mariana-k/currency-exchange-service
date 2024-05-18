@@ -23,6 +23,20 @@ docker-compose up --build
 
 ```
 
+## Running the application without Docker
+
+```bash
+
+npm install
+
+```
+
+```bash
+
+node src/app.js
+
+```
+
 ## Endpoints
 
 GET /api/rates: Get the current exchange rate.
