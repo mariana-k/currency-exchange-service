@@ -2,15 +2,25 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
 
+// Models that might need indexes or initial setup
+const Subscription = require('../models/Subscription');
+const ExchangeRate = require('../models/ExchangeRate');
+
 const migrate = async () => {
-  await mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
-  console.log('Connected to MongoDB');
+  try {
+    await mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+    console.log('Connected to MongoDB for migration');
 
-  // Implement your migration logic here
-  // E.g., creating initial collections or setting up indexes
+    // Migration: create indexes if they don't exist
+    await Subscription.init();
+    await ExchangeRate.init();
 
-  mongoose.connection.close();
-  console.log('Migration completed');
+    console.log('Migration completed');
+  } catch (error) {
+    console.error('Migration failed:', error);
+  } finally {
+    mongoose.connection.close();
+  }
 };
 
 migrate().catch(error => console.error('Migration failed:', error));
