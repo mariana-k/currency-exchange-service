@@ -39,23 +39,13 @@ node src/app.js
 
 ## API URL
 
-https://currency-exchange-service-18e40b0c61dd.herokuapp.com/
+https://currency-exchange-service-18e40b0c61dd.herokuapp.com/api-docs
 
 ## Endpoints
 
-GET /api/rates: Get the current exchange rate.
-POST /api/subscribe: Subscribe to the email newsletter.
-Swagger /api-docs: Documentation and testing
-
-## Testing
-
-Run tests with:
-
-```bash
-
-npm test
-
-```
+1. GET /api/rates: Get the current exchange rate.
+2. POST /api/subscribe: Subscribe to the email newsletter.
+3. Swagger /api-docs: Documentation and testing
 
 ## Testing with Postman
 
@@ -67,3 +57,14 @@ Value: `test1@example.com` (repeat for other test emails)
 
 Method: GET
 URL: `https://currency-exchange-service-18e40b0c61dd.herokuapp.com/api/rate`
+
+
+## Automated Testing
+
+Run tests with:
+
+```bash
+
+npm run test
+
+```
