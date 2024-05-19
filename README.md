@@ -39,7 +39,15 @@ npm install
 
 ```bash
 
-node src/app.js
+npm run start 
+
+```
+
+or
+
+```bash
+
+node server.js
 
 ```
 
