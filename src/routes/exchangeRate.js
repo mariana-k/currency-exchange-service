@@ -1,7 +1,6 @@
 const express = require('express');
-const { getExchangeRate } = require('../controllers/exchangeRateController');
-
 const router = express.Router();
+const { getExchangeRate } = require('../controllers/exchangeController');
 
 router.get('/', getExchangeRate);
 
