@@ -27,14 +27,22 @@ This service provides the current exchange rate of USD to UAH and allows users t
 
 3. Run the application with Docker
 
+    ```bash
+
+    docker-compose up --build
+
+    ```
+
+    The app runs on `localhost:3000`
+    Open `localhost:3000/api-docks` to test the service on Swagger
+
+4. Stopping the Containers
+
 ```bash
 
-docker-compose up --build
+docker-compose down
 
 ```
-
-The app runs on `localhost:3000`
-Open `localhost:3000/api-docks` to test the service on Swagger
 
 ## Running the application without Docker
 
