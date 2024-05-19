@@ -6,7 +6,6 @@ This service provides the current exchange rate of USD to UAH and allows users t
 ![image](https://github.com/mariana-k/currency-exchange-service/assets/2496186/c3f2efb8-1de9-4237-9ba3-69f3365c4c8b)
 ![image](https://github.com/mariana-k/currency-exchange-service/assets/2496186/563b281e-ebb9-49cf-a261-b4c4198b6679)
 
-
 ## Requirements
 
 - Node.js
@@ -84,5 +83,36 @@ Run tests with:
 ```bash
 
 npm run test
+
+```
+
+## Deployment
+
+This service is deployed on Heroku.
+Steps to deploy on Heroku (optional):
+
+1. Install Heroku CLI.
+2. Run these commands:
+
+    ```bash
+
+    heroku login
+    heroku config:set MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/currency-exchange-service?retryWrites=true&w=majority
+    heroku config:set EMAIL_USER=your-email@gmail.com
+    heroku config:set EMAIL_PASS=your-email-password
+    git init
+    git add .
+    git commit -m "Initial commit"
+    heroku git:remote -a your-app-name
+    git push heroku main
+
+    ```
+
+3. Verify Your Deployment
+
+```bash
+
+heroku open
+heroku logs --tail
 
 ```
