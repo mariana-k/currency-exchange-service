@@ -27,6 +27,7 @@ app.use('/api/subscribe', subscriptionRoutes);
 
 // Schedule daily emails
 const { sendDailyEmails } = require('./services/emailService');
+sendDailyEmails(); // temporary to send emails immediately
 cron.schedule('0 0 * * *', sendDailyEmails);
 
 module.exports = app; // Export the app instance without starting the server
