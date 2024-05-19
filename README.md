@@ -15,6 +15,12 @@ This service provides the current exchange rate of USD to UAH and allows users t
 `MONGO_URI="mongodb+srv://<username>:<password>@cluster0.mongodb.net/currency-exchange-service?retryWrites=true&w=majority"`
 `EMAIL_USER=your-email@gmail.com`
 `EMAIL_PASS=your-email-password`
+
+    Notes:
+    EMAIL_USER should be a Gmail email.
+    EMAIL_PASS should be a Google app password, not just regular password you login Gmail.
+    <https://support.google.com/accounts/answer/185833?hl=en>
+
 3. Run the application with Docker
 
 ```bash
