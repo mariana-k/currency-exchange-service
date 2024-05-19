@@ -1,6 +1,11 @@
 # Currency Exchange Service
 
 This service provides the current exchange rate of USD to UAH and allows users to subscribe to a daily email newsletter with the latest exchange rate.
+<https://currency-exchange-service-18e40b0c61dd.herokuapp.com/api-docs>
+
+![image](https://github.com/mariana-k/currency-exchange-service/assets/2496186/c3f2efb8-1de9-4237-9ba3-69f3365c4c8b)
+![image](https://github.com/mariana-k/currency-exchange-service/assets/2496186/563b281e-ebb9-49cf-a261-b4c4198b6679)
+
 
 ## Requirements
 
