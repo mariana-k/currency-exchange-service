@@ -33,6 +33,9 @@ docker-compose up --build
 
 ```
 
+The app runs on `localhost:3000`
+Open `localhost:3000/api-docks` to test the service on Swagger
+
 ## Running the application without Docker
 
 ```bash
@@ -86,10 +89,10 @@ npm run test
 
 ```
 
-## Deployment
+## Deployment (optional)
 
 This service is deployed on Heroku.
-Steps to deploy on Heroku (optional):
+Steps to deploy on Heroku:
 
 1. Install Heroku CLI.
 2. Run these commands:
