@@ -3,22 +3,11 @@ version: "3.8"
 services:
   app:
     build: .
+    container_name: currency-exchange-service
     ports:
       - "3000:3000"
     environment:
       - MONGO_URI=${MONGO_URI}
       - EMAIL_USER=${EMAIL_USER}
       - EMAIL_PASS=${EMAIL_PASS}
-      - PORT=3000
-    depends_on:
-      - mongo
-
-  mongo:
-    image: mongo:latest
-    ports:
-      - "27017:27017"
-    volumes:
-      - mongo-data:/data/db
-
-volumes:
-  mongo-data:
+      - PORT=${PORT}
