@@ -3,7 +3,7 @@ info:
   description: ""
   version: "1.0.0"
   title: "Currency exchange rate application"
-host: "currency-exchange-service-18e40b0c61dd.herokuapp.com"
+host: "localhost:3000"
 basePath: "/api"
 tags:
   - name: "rate"
@@ -11,7 +11,7 @@ tags:
   - name: "subscription"
     description: "Робота з підпискою"
 schemes:
-  - "https"
+  - "http"
 paths:
   /rate:
     get:

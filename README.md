@@ -34,7 +34,10 @@ This service provides the current exchange rate of USD to UAH and allows users t
     ```
 
     The app runs on `localhost:3000`
-    Open `localhost:3000/api-docks` to test the service on Swagger
+    Update `gses2swagger.yaml` to use Swagger on localhost:
+    1. host: `locahost:3000`
+    2. schemas: `http`
+    Open `localhost:3000/api-docks` to test the service locally on Swagger
 
 4. Stopping the Containers
 
