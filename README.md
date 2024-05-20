@@ -5,6 +5,8 @@ This service provides the current exchange rate of USD to UAH and allows users t
 
 ![image](https://github.com/mariana-k/currency-exchange-service/assets/2496186/c3f2efb8-1de9-4237-9ba3-69f3365c4c8b)
 ![image](https://github.com/mariana-k/currency-exchange-service/assets/2496186/563b281e-ebb9-49cf-a261-b4c4198b6679)
+![image](https://github.com/mariana-k/currency-exchange-service/assets/2496186/f99715b3-f90a-48c2-bcfd-efab0dcee86a)
+
 
 ## Requirements
 
